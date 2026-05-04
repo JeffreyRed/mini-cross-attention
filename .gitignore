@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+outputs/*.pt
+outputs/*.png
+outputs/*.gif
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
