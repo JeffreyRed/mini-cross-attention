@@ -131,6 +131,8 @@ Ideal alignment after training:
 This anti-diagonal pattern is the model having learned to reverse sequences.
 It is using cross-attention as a learned pointer into the source.
 
+![training](outputs/training.png)
+
 For machine translation the alignment is softer and more diagonal:
 
 ```
@@ -147,6 +149,11 @@ but it captures the correspondence between words across languages.
 This alignment matrix was the key visualisation in Bahdanau et al. (2015),
 the paper that introduced attention to sequence-to-sequence models — two years
 before the transformer existed.
+
+![alignment_0](outputs/alignment_0.png)
+![alignment_1](outputs/alignment_1.png)
+![alignment_2](outputs/alignment_2.png)
+
 
 ---
 
@@ -175,6 +182,8 @@ TARGET  →  Decoder ←──────────┘
 The encoder runs **once** per input. Its output is fixed and reused at
 every decoding step. The decoder runs **once per generated token**, each
 time attending to the full encoder output via cross-attention.
+
+![self_vs_cross](outputs/self_vs_cross.png)
 
 ---
 

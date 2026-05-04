@@ -13,13 +13,13 @@
 
 | Step | Repository | What it builds |
 |------|-----------|----------------|
-| 1 | [mini-embedding](../mini-embedding) | Word vectors — Skip-gram Word2Vec |
-| 2 | [mini-self-attention](../mini-self-attention) | Multi-head self-attention encoder block |
-| 3 | [mini-transformer](../mini-transformer) | Positional encoding + stacked causal decoder |
-| 4 | [mini-gpt](../mini-gpt) | Real corpus, overfitting, beam search, evaluation |
-| 5 | [mini-chat](../mini-chat) | Instruction format, loss masking, chat interface |
+| 1 | [mini-embedding](https://github.com/JeffreyRed/mini-embedding) | Word vectors — Skip-gram Word2Vec |
+| 2 | [mini-self-attention](https://github.com/JeffreyRed/mini-self-attention) | Multi-head self-attention encoder block |
+| 3 | [mini-transformer](https://github.com/JeffreyRed/mini-transformer) | Positional encoding + stacked causal decoder |
+| 4 | [mini-gpt](https://github.com/JeffreyRed/mini-gpt) | Real corpus, overfitting, beam search, evaluation |
+| 5 | [mini-chat](https://github.com/JeffreyRed/mini-chat) | Instruction format, loss masking, chat interface |
 | **6** | **mini-cross-attention** ← you are here | Cross-attention module + alignment visualisation |
-| 7 | mini-translator _(coming)_ | English→Spanish encoder-decoder |
+| 7 | [mini-translator] (https://github.com/JeffreyRed/mini-translator) | English→Spanish encoder-decoder |
 
 ---
 
@@ -177,6 +177,13 @@ Training takes **under 1 minute on CPU**.
 | `self_vs_cross.png` | Self-attention (square) vs cross-attention (rectangular) side by side |
 | `training.png` | Loss and token accuracy curves |
 | `encoder_decoder.pt` | Saved model weights |
+
+![alignment_0](outputs/alignment_0.png)
+![alignment_1](outputs/alignment_1.png)
+![alignment_2](outputs/alignment_2.png)
+![self_vs_cross](outputs/self_vs_cross.png)
+![training](outputs/training.png)
+
 
 ---
 
